@@ -29,6 +29,13 @@ platforms:
       require_ansible_omnibus: true
     transport:
       username: admin
+  - name: centos-6.5
+    driver:
+      image_id: ami-46c4f65b
+    transport:
+      username: root
+    provisioner:
+      enable_yum_epel: true
   - name: centos-7.1
     driver:
       image_id: ami-7cc4f661
